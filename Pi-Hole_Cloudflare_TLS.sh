@@ -3,14 +3,7 @@
 # Script to use Cloudflare and Let's Encrypt to add a certificate 
 # to Pi-Hole and make the automatic renewal process work. 
 
-# Requires Certbot and the Cloudflare plugin. 
-# See 
-# USAGE: ./<script> <domain name> <path to Cloudflare auth file>
-
-# References - 
-# https://discourse.pi-hole.net/t/enabling-https-for-your-pi-hole-web-interface/5771
-# https://tech.borpin.co.uk/2019/03/22/letsencrypt-ssl-certificates-by-dns-challenge-with-lighttpd/
-
+# See https://github.com/Gestas/Pi-Hole_Cloudflare_TLS
 # Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v4.3.2.
 
 set -o errexit
