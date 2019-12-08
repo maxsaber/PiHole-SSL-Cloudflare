@@ -8,9 +8,9 @@ sudo apt-get install python3-certbot-dns-cloudflare
 
 ### USAGE: 
 ```
-wget https://raw.githubusercontent.com/Gestas/Pi-Hole_Cloudflare_TLS/master/Pi-Hole_Cloudflare_TLS.sh
-chmod +x Pi-Hole_Cloudflare_TLS.sh
-sudo ./Pi-Hole_Cloudflare_TLS.sh <email address> <domain name> <path to Cloudflare auth file>
+$ wget https://raw.githubusercontent.com/Gestas/Pi-Hole_Cloudflare_TLS/master/Pi-Hole_Cloudflare_TLS.sh
+$ chmod +x Pi-Hole_Cloudflare_TLS.sh
+$ sudo ./Pi-Hole_Cloudflare_TLS.sh <email address> <domain name> <path to Cloudflare auth file>
 ```
 This script only needs to be run once, you can delete it after that. 
 
