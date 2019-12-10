@@ -3,7 +3,7 @@ Use Cloudflare and Let's Encrypt to add a certificate to the Pi-Hole web interfa
 
 Requires Certbot and the Cloudflare plugin.
 ```
-sudo apt-get install python3-certbot-dns-cloudflare
+sudo apt-get install certbot python3-certbot-dns-cloudflare
 ```
 
 ### USAGE: 
