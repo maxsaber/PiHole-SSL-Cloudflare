@@ -3,8 +3,8 @@
 # Script to use Cloudflare and Let's Encrypt to add a certificate 
 # to Pi-Hole and make the automatic renewal process work. 
 
-# See https://github.com/Gestas/Pi-Hole_Cloudflare_TLS
-# Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v4.3.2.
+# See https://github.com/maxsaber/PiHole-SSL-Cloudflare
+# Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v5.1.3.
 
 set -o errexit
 set -o pipefail
@@ -56,7 +56,6 @@ setup_lighttpd(){
 	# Create the required lighttpd file. This file won't be 
 	# overwritten during pi-hole updates. 
 	sudo tee "/etc/lighttpd/external.conf" > /dev/null << EOF
-\$HTTP["host"] == "$MY_DOMAIN" {
   # Ensure the Pi-hole Block Page knows that this is not a blocked domain
   setenv.add-environment = ("fqdn" => "true")
 
@@ -64,7 +63,6 @@ setup_lighttpd(){
   \$SERVER["socket"] == ":443" {
     ssl.engine = "enable"
     ssl.pemfile = "/etc/letsencrypt/live/$MY_DOMAIN/combined.pem"
-    ssl.ca-file =  "/etc/letsencrypt/live/$MY_DOMAIN/fullchain.pem"
     ssl.honor-cipher-order = "enable"
     ssl.cipher-list = "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH"
     ssl.use-sslv2 = "disable"
@@ -77,7 +75,6 @@ setup_lighttpd(){
       url.redirect = (".*" => "https://%0\$0")
     }
   }
-}
 EOF
 	printf "%s\n" "/etc/lighttpd/external.conf written"
 }

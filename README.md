@@ -18,5 +18,7 @@ This script only needs to be run once, you can delete it after that.
   * Original: https://github.com/Gestas/Pi-Hole-TLS-with-Cloudflare
   * https://discourse.pi-hole.net/t/enabling-https-for-your-pi-hole-web-interface/5771
   * https://tech.borpin.co.uk/2019/03/22/letsencrypt-ssl-certificates-by-dns-challenge-with-lighttpd/
+  * https://certbot-dns-cloudflare.readthedocs.io/en/stable/
+  * https://labzilla.io/blog/cloudflare-certbot
 
 Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v5.1.3
