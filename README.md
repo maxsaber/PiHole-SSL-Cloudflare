@@ -8,14 +8,15 @@ sudo apt-get install certbot python3-certbot-dns-cloudflare
 
 ### USAGE: 
 ```
-$ wget https://raw.githubusercontent.com/Gestas/Pi-Hole_Cloudflare_TLS/master/Pi-Hole_Cloudflare_TLS.sh
+$ wget https://raw.githubusercontent.com/maxsaber/PiHole-SSL-Cloudflare/master/Pi-Hole_Cloudflare_TLS.sh
 $ chmod +x Pi-Hole_Cloudflare_TLS.sh
 $ sudo ./Pi-Hole_Cloudflare_TLS.sh <email address> <domain name> <path to Cloudflare auth file>
 ```
 This script only needs to be run once, you can delete it after that. 
 
 ### References - 
+  * Original: https://github.com/Gestas/Pi-Hole-TLS-with-Cloudflare
   * https://discourse.pi-hole.net/t/enabling-https-for-your-pi-hole-web-interface/5771
   * https://tech.borpin.co.uk/2019/03/22/letsencrypt-ssl-certificates-by-dns-challenge-with-lighttpd/
 
-Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v4.3.2.
+Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v5.1.3
