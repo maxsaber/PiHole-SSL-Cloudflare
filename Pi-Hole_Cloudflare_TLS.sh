@@ -4,7 +4,7 @@
 # to Pi-Hole and make the automatic renewal process work. 
 
 # See https://github.com/maxsaber/PiHole-SSL-Cloudflare
-# Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v5.1.3.
+# Tested with Raspbian GNU/Linux 11 (bullseye) and Pi-Hole v5.1.3.
 
 set -o errexit
 set -o pipefail
