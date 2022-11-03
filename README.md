@@ -21,4 +21,5 @@ This script only needs to be run once, you can delete it after that.
   * https://certbot-dns-cloudflare.readthedocs.io/en/stable/
   * https://labzilla.io/blog/cloudflare-certbot
 
-Tested with Raspbian GNU/Linux 10 (buster) and Pi-Hole v5.1.3
+Tested with Raspbian GNU/Linux 11 (bullseye) and Pi-Hole v5.1.3
+Last updated: 11/2022
